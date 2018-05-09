@@ -11,13 +11,19 @@ int main(){
 
 	srand(time(NULL));
 
+	const char* ascii= "abcdefghijklmnoprstuwxyzABCDEFGHIJKLMNOPRSTUWXYZ0123456789";
+	int asciiLen = 58;
+
 	int x = 15;
 	double tab[15];
 	char znaki[15];
 	char znak = 'a';
+	int tmp;
 	for (int i = 0; i < x; i++){
 		tab[i] = rand()%10000 / 10.0;
-		znaki[i] = rand()%(122-97+1)+97;
+		tmp = rand()%asciiLen;
+		znaki[i] = ascii[tmp];
+		//znaki[i] = rand()%(122-97+1)+97;
 		cout << tab[i] << " ";
 	}
     
