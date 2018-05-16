@@ -19,6 +19,7 @@ int main(){
 	char znaki[15];
 	char znak = 'a';
 	int tmp;
+	cout << sizeof(char) << endl;
 	for (int i = 0; i < x; i++){
 		tab[i] = rand()%10000 / 10.0;
 		tmp = rand()%asciiLen;
